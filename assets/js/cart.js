@@ -26,7 +26,7 @@ function updateCartDisplay() {
 
         cart.forEach(item => {
                 const li = document.createElement('li');
-                li.textContent = `${item.name} - $${item.price}`;
+                li.textContent = `${item.name} - Rs.${item.price}`;
                 cartItemsList.appendChild(li);
                 total += item.price;
                 quantity = cart.length;
